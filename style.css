@@ -1,0 +1,386 @@
+/*
+  Theme Name: Minimal Life
+  Author: kina
+  Version: 1.0
+*/
+
+
+#primary {
+	width: 100%;
+    height: 100%;
+	margin:0 auto;
+	padding:0px;
+}
+
+
+/**
+*	Header Area
+==================================*/
+
+#header {	
+    width:100%;
+	min-height: 200px;
+	padding: 20px 0px;
+}
+
+.header-top {
+	position:relative;
+    min-height: 73px;
+    margin: 0px 40px;
+}
+
+#header #site-logo {
+    float: left;
+	width: 20%;
+	/*padding-left: 10px;*/
+}
+
+#header #site-logo a {
+	font-family: 'Raleway', sans-serif;
+	font-weight:900;
+	font-size:50px;
+	text-decoration: none;
+	color:#000;
+}
+
+#header #site-logo img {
+	width : 250px;
+	height: 150px;
+}
+
+/* ---------- menu -------- */
+
+.menu-wrap{
+	top:0;
+	right:0;
+	width:100%;
+	position:relative;
+	overflow:hidden;
+}
+
+.main-menu {
+	width:100%;
+	height:100%;
+	margin: 0 auto;
+	position:absolute;
+	top: 68px;
+	
+}
+
+.main-menu ul {
+	display:block;
+	width:100%;
+	margin-top: 35px;
+}
+
+.main-menu ul li:not(.sub-menu) {
+	padding:10px 5px 0px 0px;
+	width:200px;
+	height:100%;
+    margin: 0 auto
+}
+
+.main-menu ul li .sub-menu{ 
+	display: inline-flex;
+    width: 100%;
+    min-width: 350px;
+	
+}
+
+.main-menu ul li .sub-menu a{ 
+	font-size:18px;
+	
+}
+
+.main-menu ul a {
+	font-size: 24px;
+	font-weight: 400;
+	text-decoration:none;
+	text-transform: lowercase;
+	color:#000;
+}
+
+
+
+.main-menu ul li .menu-item{
+	display:inline-block;
+	padding:0;
+}
+
+
+
+/*----- menu overlay---------- */
+
+#site-menu {
+	width: 50px;
+	height:50px;
+	position:absolute;
+	top:10px;
+	right:0px;
+}
+
+.menu-link{
+	width:100%;
+	height:100%;
+	position:absolute;
+	top:0;
+	left:0;
+	z-index: 1001;
+}
+
+.main-menu {
+	display:none;
+}
+
+.menu-button {
+	width:100%;
+	height:100%;
+	position:absolute;
+	top:0;
+}
+
+.line {
+	display:block;
+	width:27px;
+	height:3px;
+	background: #333;
+	border-radius:2px;
+	position:absolute;
+	top:10px;
+	margin: 5px 11px;
+}
+
+.line-2{
+	top:18px;
+}
+
+.line-3{
+	top:26px;
+}
+
+/*---menu open--*/
+
+#site-menu.open .line {
+	transform: translateY(9px) rotate(45deg);
+	transition: all 0.25s ease-in-out;
+}
+
+#site-menu.open .line-2{
+	opacity:0;
+}
+#site-menu.open .line-3{
+	transform: translateY(-7px) rotate(-45deg);
+}
+
+/*-- menu overlay --
+.menu-overlay{
+	width:100%;
+	height:100%;
+	transform: scale(1);
+	position:absolute;
+	cursor:pointer;
+}
+
+#site-menu:hover  .menu-overlay{
+	transform:scale(1.5);
+	transition: opacity 0.4s ease-in-out;
+}*/
+
+/* ---- menu-overlay --- */
+
+body.open .menu-wrap {
+	position:absolute;
+	width:100%;
+	height:100%;
+	z-index: 1000;
+	background:#f8f8f8;
+	transition: all 0.25s ease-in-out;
+}
+body.open .main-menu{
+	display: block;
+	position: absolute;
+	left:25%;
+	width:60%;
+	height:100%;
+	z-index:1001;	
+	transition: opacity 0.5s ease-in-out;
+}
+
+/* ------ header title -------*/
+
+#header #site-title {
+	text-align: center;	
+	margin-top: 20px;
+    padding: 20px 0PX;
+	}
+
+#header #site-title a {
+	font-family: 'Raleway', sans-serif;
+	font-size: 90px;
+	font-weight:900;
+	text-decoration:none;
+	color:#000;
+}
+
+/**
+*   post images
+---------------------------------------------*/
+
+.post-thumb img {
+	min-width:100%;
+	min-height:100%;
+}
+
+
+/**
+*	front post
+==================================*/
+
+.entry-front {
+	margin:0px 40px ;
+}
+.entry-front article, .entry-category article {
+	margin: 0 auto;
+}
+
+.entry-front .post:first-child {
+	position:relative;
+	top:15px;
+}
+
+.entry-front .post:first-child .post-thumb {
+	width:100%; 
+	height: 100%;
+    min-height: 448px;
+}
+
+.entry-front .post:first-child .post-title{
+	position: relative;
+    bottom: 104px;
+	width:330px;
+	height:100%;
+	border-left: 33px solid #c60000;
+	margin-left:40px;
+}
+
+.entry-front  .post:first-child .post-title a{
+	display:inline-block;
+	padding-left: 20px;
+	font-size:65px;
+	font-weight:900;
+	line-height:1;
+	text-decoration:none;
+	color:#000;
+}
+
+.entry-front  .post:first-child .post-content {
+    margin: 0px 40px;
+    position: relative;
+    bottom: 65px;
+}
+
+.entry-front  .post:first-child .post-content p {
+	font-family : 'Roboto', 'Raleway', sans-serif;
+	font-size:18px;
+    color: #171717;
+	line-height: 1.5;
+}
+
+
+.entry-front  .post:not(:first-child) {
+	float:left;
+	width: 450px;
+	margin: 0px 20px 30px 20px;
+    padding: 0px 5px;
+}
+
+.entry-front .post:not(:first-child):nth-child(even){
+	margin-left:35px;
+}
+
+.entry-front .post:not(:first-child):nth-child(odd){
+	margin-left:35px;
+}
+
+.entry-front  .post:not(:first-child) .post-thumb {
+	width:450px;
+	height:400px;
+    margin-bottom: 10px;
+	overflow:hidden;
+	position:relative;
+}
+
+.entry-front .post:not(:first-child) .post-thumb img {
+	min-width:100%;
+	min-height:100%;
+	position: absolute;
+}
+
+.entry-front  .post:not(:first-child) .post-title {
+	display:block;
+	margin: 0  auto;
+	text-align:center;
+	font-size:30px;
+	font-weight:700;
+}
+
+.entry-front .post:not(:first-child) .post-title a {
+	text-decoration:none;
+	color:#000;
+}
+
+.entry-front .post:not(:first-child) .post-content {
+	display:none;
+}
+
+
+/**
+*	Category Area
+================================ */
+
+.category .header-top {
+	min-height:0;
+}
+
+.category #header #site-title {
+	margin:0;
+	padding:0;
+}
+
+.category #header #site-title a {
+	font-size:55px;
+}
+
+.category-title {
+	text-align:center;
+	font-size:50px;
+	
+}
+.category-title .entry-title {
+	font-family:"Raleway",sans-serif;
+}
+
+.category article {
+	width:100%;
+	height:100%;
+}
+
+
+
+/**
+*	Footer Area
+================================ */
+
+#footer {
+  width:100%;
+  height:100%;
+  margin: 50px 0px 25px 0px;
+  border-top:5px solid #000;
+}
+#footer p {
+	display:block;
+	padding: 20px 0px;
+	text-align:center;
+	font-size:20px;
+	font-family: 'Shrikhand', sans-serif;
+}
